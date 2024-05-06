@@ -4,7 +4,7 @@ export default function Home() {
     return (
       <div>
         <h1>About Me</h1>
-        <img src={headshot} alt="headshot" />
+        <img id="headshot" src={headshot} alt="headshot" />
         <p>
          Hello and welcome to my webpage! My name is Sarah and I am an aspiring software developer. I
         graduated with a Bachelor's and Master's in International Relations and have previously worked in

@@ -13,3 +13,9 @@
 .left {
   text-align: left;
 }
+
+#headshot {
+  max-height: 25%;
+  max-width: 25%;
+  border-radius: 50%;
+}
