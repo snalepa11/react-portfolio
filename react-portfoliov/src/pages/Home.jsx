@@ -3,6 +3,12 @@ export default function Home() {
       <div>
         <nav>
         <h1>Home Page</h1>
+        <ul>
+            <li>About Me</li>
+            <li>Portfolio</li>
+            <li>Resume</li>
+            <li>Contact</li>
+        </ul>
         </nav>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
