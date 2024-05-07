@@ -4,7 +4,7 @@ export default function Resume() {
         <div>
             <h1 class="left">Resume</h1>
             <div class="left">
-                <h2>Download my Resume</h2>
+                <h2>Download my <a href='../../assets/Resume 2024 (Ad)_.docx (1).pdf'>Resume</a></h2>
                 <h3>Front-end Proficiencies</h3>
                 <ul>
                     <li>HTML</li>
@@ -19,6 +19,9 @@ export default function Resume() {
                 <ul>
                 <li>NoSQL</li>
                 <li>Express</li>
+                <li>PSQL</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
                 </ul>
             </div>
 
