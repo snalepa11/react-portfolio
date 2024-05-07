@@ -10,16 +10,16 @@ export default function Portfolio(){
             <h1 class='left'>Portfolio</h1>
             <div class='flex'>
             <div>
-                <img class = 'tree' src={tree} alt = "a palm tree by a white house" />
+                <a href='https://github.com/snalepa11/Note-taker'><img class = 'tree' src={tree} alt = "a palm tree by a white house" /></a>
             </div>
             <div>
-                <img class = 'tree' src={record} alt = "A blue record player" />
+               <a href='https://github.com/snalepa11/sql-employee-tracker'> <img class = 'tree' src={record} alt = "A blue record player" /></a>
             </div>
             <div>
-                <img class = 'tree' src = {linen} alt = "white curtains blowing in the wind" />
+                <a href='https://github.com/snalepa11/SVG-logo-maker'><img class = 'tree' src = {linen} alt = "white curtains blowing in the wind" /></a>
             </div>
             <div>
-                <img class = 'tree' src = {tulips} alt = "white tulips in a brown paper bag" />
+                <a href='https://github.com/snalepa11/random-password-generator'><img class = 'tree' src = {tulips} alt = "white tulips in a brown paper bag" /></a>
             </div>
             </div>
         </div>
