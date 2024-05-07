@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
   
-      {/* <Home></Home>  */}
+      {/* <Home></Home>*/}
       {/* <Resume></Resume> */}
       {/* <Portfolio></Portfolio> */}
       {/* <Header></Header> */}
