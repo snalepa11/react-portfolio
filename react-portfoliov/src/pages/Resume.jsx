@@ -1,10 +1,11 @@
 import '../App.css'
+import pdf from '../components/Resume2024.pdf'
 export default function Resume() {
     return (
         <div>
             <h1 class="left">Resume</h1>
             <div class="left">
-                <h2>Download my <a href='../../assets/Resume 2024 (Ad)_.docx (1).pdf'>Resume</a></h2>
+                <h2>Download my <a href= {pdf} target='_blank'>Resume</a></h2>
                 <h3>Front-end Proficiencies</h3>
                 <ul>
                     <li>HTML</li>

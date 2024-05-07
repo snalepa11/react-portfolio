@@ -1,10 +1,10 @@
 #root {
   text-align: center; 
   padding: 30px;
+  color: #162a2c;
 }
 
 * {
-  color: #162a2c;
   background-color: #d6e0e2;
 }
 
