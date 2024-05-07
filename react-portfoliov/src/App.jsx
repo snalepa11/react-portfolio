@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import './App.css'
 import Resume from './pages/Resume'
 import Portfolio from './pages/Portfolio'
+import Header from './pages/Header'
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
   
       {/* <Home></Home>  */}
       {/* <Resume></Resume> */}
-      <Portfolio></Portfolio>
+      {/* <Portfolio></Portfolio> */}
+      <Header></Header>
 
     </div>
   )

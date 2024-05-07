@@ -28,3 +28,12 @@
 .flex {
   display: flex;
 }
+
+header {
+ margin-top: 0%;
+  & ul {
+  list-style: none;
+  font-size: x-large;
+  justify-content: space-evenly;
+ }
+}
