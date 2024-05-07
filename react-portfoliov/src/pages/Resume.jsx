@@ -1,8 +1,9 @@
+import '../App.css'
 export default function Resume() {
     return (
         <div>
             <h1 class="left">Resume</h1>
-            <div>
+            <div class="left">
                 <h2>Download my Resume</h2>
                 <h3>Front-end Proficiencies</h3>
                 <ul>
