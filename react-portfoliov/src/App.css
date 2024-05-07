@@ -18,3 +18,13 @@
   max-width: 25%;
   border-radius: 50%;
 }
+
+.tree {
+  max-height: 50%;
+  max-width: 50%;
+}
+
+
+.flex {
+  flex-direction: row;
+}
