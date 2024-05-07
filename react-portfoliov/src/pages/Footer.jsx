@@ -5,10 +5,12 @@ import LinkedIn from '../assets/LI.png'
 
 export default function Footer(){
     return (
+        <div>
         <footer>
-            <img src={github} alt='github logo'></img>
+            <a href='https://github.com/snalepa11'><img src={github} alt='github logo'></img></a>
             <img src={stack} alt='stack overflow icon'></img>
-            <img src={LinkedIn} alt='LinkedIn logo'></img>
+           <a href='https://www.linkedin.com/in/sarah-nalepa-68999a161/'><img src={LinkedIn} alt='LinkedIn logo'></img></a>
         </footer>
+        </div>
     );
 }

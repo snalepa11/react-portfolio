@@ -11,10 +11,10 @@ function App() {
   return (
     <div>
   
-      {/* <Home></Home>*/}
-      {/* <Resume></Resume> */}
+       <Header></Header>
+      {/* <Home></Home> */}
+      <Resume></Resume>
       {/* <Portfolio></Portfolio> */}
-      {/* <Header></Header> */}
       <Footer></Footer>
 
     </div>
