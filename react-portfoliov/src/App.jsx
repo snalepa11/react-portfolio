@@ -4,6 +4,7 @@ import './App.css'
 import Resume from './pages/Resume'
 import Portfolio from './pages/Portfolio'
 import Header from './pages/Header'
+import Footer from './pages/Footer'
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
       {/* <Home></Home>  */}
       {/* <Resume></Resume> */}
       {/* <Portfolio></Portfolio> */}
-      <Header></Header>
+      {/* <Header></Header> */}
+      <Footer></Footer>
 
     </div>
   )
