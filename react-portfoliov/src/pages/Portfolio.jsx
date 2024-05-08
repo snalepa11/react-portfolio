@@ -32,7 +32,7 @@ export default function Portfolio(){
                 <figcaption>ORM E-Commerce Website</figcaption>
             </div>
             <div>
-            <a href='https://github.com/snalepa11/ORM-Ecommerce'><img class = 'tree' src={shells} alt = 'blue sea shells'/></a>
+            <a href='https://github.com/snalepa11/ORM-Ecommerce'><img class = 'tree' src={shells} alt = 'cream scattered stationary'/></a>
                 <figcaption>ORM E-Commerce Website</figcaption>
             </div>
             </div>
