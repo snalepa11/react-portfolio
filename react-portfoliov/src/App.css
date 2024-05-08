@@ -27,9 +27,12 @@
   max-width: 80%;
   border: white solid 3px;
   margin-right: 20px;
+
    & figcaption {
     font-weight: bolder;
-    margin-top: -20px;
+    /* position: absolute;
+    margin-top: -75px;
+    margin-left: 15px; */
     color: #162a2c;
   }
 }
