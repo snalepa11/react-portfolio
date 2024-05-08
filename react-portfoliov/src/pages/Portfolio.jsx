@@ -10,7 +10,7 @@ export default function Portfolio(){
     return (
         <div>
             <h1 class='left'>Portfolio</h1>
-            <div class='flex'>
+            <div class='flex-wrap'>
             <div>
                 <a href='https://github.com/snalepa11/Note-taker'><img class = 'tree' src={tree} alt = "a palm tree by a white house" /></a>
                 <figcaption>Express Note Taker</figcaption>
