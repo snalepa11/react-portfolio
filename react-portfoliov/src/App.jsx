@@ -12,8 +12,8 @@ function App() {
     <div>
   
        <Header></Header>
-      {/* <Home></Home>
-      <Resume></Resume> */}
+      {/* <Home></Home> */}
+      {/* <Resume></Resume>  */}
       <Portfolio></Portfolio>
       <Footer></Footer>
 

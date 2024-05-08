@@ -28,7 +28,7 @@
   border: white solid 3px;
   margin-right: 20px;
    & figcaption {
-    font-weight: bold;
+    font-weight: bolder;
     margin-top: -20px;
     color: #162a2c;
   }

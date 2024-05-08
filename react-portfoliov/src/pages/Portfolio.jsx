@@ -11,7 +11,7 @@ export default function Portfolio(){
         <div>
             <h1 class='left'>Portfolio</h1>
             <div class='flex-wrap'>
-            <div>
+            <div class = 'parentContainer'>
                 <a href='https://github.com/snalepa11/Note-taker'><img class = 'tree' src={tree} alt = "a palm tree by a white house" /></a>
                 <figcaption>Express Note Taker</figcaption>
             </div>
@@ -32,8 +32,8 @@ export default function Portfolio(){
                 <figcaption>ORM E-Commerce Website</figcaption>
             </div>
             <div>
-            <a href='https://github.com/snalepa11/ORM-Ecommerce'><img class = 'tree' src={shells} alt = 'cream scattered stationary'/></a>
-                <figcaption>ORM E-Commerce Website</figcaption>
+            <a href='https://github.com/snalepa11/weather-app'><img class = 'tree' src={shells} alt = 'cream scattered stationary'/></a>
+                <figcaption>API Weather App</figcaption>
             </div>
             </div>
         </div>
