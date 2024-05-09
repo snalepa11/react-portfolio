@@ -5,7 +5,7 @@ import LinkedIn from '../assets/LI.png'
 
 export default function Footer(){
     return (
-        <div>
+        <div class='margint'>
         <footer>
             <a href='https://github.com/snalepa11'><img src={github} alt='github logo'></img></a>
             <img src={stack} alt='stack overflow icon'></img>

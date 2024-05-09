@@ -9,7 +9,7 @@ export default function Contact(){
             <h1>Contact Form</h1>
 
             <div>
-            <Form.Control type="text" placeholder="Name" readOnly />
+            <Form.Control type="text" placeholder="Name" />
             <Form>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
       <Form.Label></Form.Label>

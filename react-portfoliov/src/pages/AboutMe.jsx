@@ -3,7 +3,7 @@ import headshot from '../assets/headshot.jpeg'
 export default function AboutMe() {
     return (
       <div>
-        <h1>About Me</h1>
+        <h1 class= 'margint'>About Me</h1>
         <img id="headshot" src={headshot} alt="headshot" />
         <p>
          Hello and welcome to my webpage! My name is Sarah and I am an aspiring software developer. I
