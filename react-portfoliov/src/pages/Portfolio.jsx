@@ -9,7 +9,7 @@ import shells from '../assets/stationary.jpeg'
 export default function Portfolio(){
     return (
         <div class='margint'>
-            <h1 class='left'>Portfolio</h1>
+            <h1>Portfolio</h1>
             <div class='flex-wrap'>
             <div >
                 <a href='https://github.com/snalepa11/Note-taker'><img class = 'tree' src={tree} alt = "a palm tree by a white house" /></a>

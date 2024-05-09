@@ -84,3 +84,20 @@ footer {
 .margint {
   margin-top: 20px;
 }
+
+@media (max-width: 500px){
+  header {
+    flex-direction: column;
+    & ul {
+      flex-direction: column;
+    }
+  }
+  footer {
+    & img {
+      max-width: 10%;
+      max-height: 10%;
+    }
+  }
+
+
+}
