@@ -27,14 +27,17 @@
   max-width: 80%;
   border: white solid 3px;
   margin-right: 20px;
+}
 
-   & figcaption {
-    font-weight: bolder;
+.fig {
     /* position: absolute;
     margin-top: -75px;
     margin-left: 15px; */
     color: #162a2c;
-  }
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+  
 }
 
 
@@ -73,4 +76,8 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
   }
+}
+
+.margint {
+  margin-top: 10px;
 }

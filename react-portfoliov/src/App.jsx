@@ -19,8 +19,8 @@ function App() {
        {/* <NavTabs></NavTabs> */}
       {/* <Home></Home> */}
       {/* <Resume></Resume>  */}
-      {/* <Portfolio></Portfolio> */}
-      <Contact></Contact>
+      <Portfolio></Portfolio>
+      {/* <Contact></Contact> */}
       <Footer></Footer>
 
     </div>
