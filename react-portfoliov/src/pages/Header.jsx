@@ -1,19 +1,13 @@
 import '../App.css'
+import NavTabs from '../components/NavTabs';
 
 export default function Header(){
-    return(
+    return (
         <div>
-        <header class='flex'>
-         <h1>Sarah Nalepa</h1>
-         <div>
-         <ul class='flex' id='header'>
-            <li>About Me</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-            <li>Resume</li>
-         </ul>
-         </div>
-        </header>
+            <header class='flex'>
+                <h1>Sarah Nalepa</h1>
+                <NavTabs />
+            </header>
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import headshot from '../assets/headshot.jpeg'
 
-export default function Home() {
+export default function AboutMe() {
     return (
       <div>
         <h1>About Me</h1>
