@@ -1,4 +1,5 @@
 import '../App.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Contact(){
     return(
@@ -6,7 +7,7 @@ export default function Contact(){
             <h1>Contact Form</h1>
 
             <div>
-            
+    
             </div>
         </div>
     );

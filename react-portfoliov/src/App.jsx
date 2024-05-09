@@ -1,4 +1,5 @@
 import { useState } from 'react'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './pages/Home'
 import './App.css'
 import Resume from './pages/Resume'
@@ -15,8 +16,8 @@ function App() {
        <Header></Header>
       {/* <Home></Home> */}
       {/* <Resume></Resume>  */}
-      <Portfolio></Portfolio>
-      {/* <Contact></Contact> */}
+      {/* <Portfolio></Portfolio> */}
+      <Contact></Contact>
       <Footer></Footer>
 
     </div>
