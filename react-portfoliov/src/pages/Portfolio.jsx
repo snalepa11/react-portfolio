@@ -25,7 +25,7 @@ export default function Portfolio(){
             </div>
             <div>
                 <a href='https://github.com/snalepa11/random-password-generator'><img class = 'tree' src = {tulips} alt = "white tulips in a brown paper bag" /></a>
-                <figcaption class='fig'>Random Password Generator</figcaption>
+                <a href='https://snalepa11.github.io/random-password-generator/'><figcaption class='fig'>Random Password Generator</figcaption></a>
             </div>
             <div>
                 <a href='https://github.com/snalepa11/ORM-Ecommerce'><img class = 'tree' src={paint} alt = 'blue paint smeared on white canvas'/></a>
@@ -33,7 +33,7 @@ export default function Portfolio(){
             </div>
             <div>
             <a href='https://github.com/snalepa11/weather-app'><img class = 'tree' src={shells} alt = 'cream scattered stationary'/></a>
-                <figcaption class='fig'>API Weather App</figcaption>
+                <a href='https://snalepa11.github.io/weather-app/'><figcaption class='fig'>API Weather App</figcaption></a>
             </div>
             </div>
         </div>
