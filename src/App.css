@@ -1,5 +1,5 @@
 #root {
-  text-align: center; 
+  text-align: center;
   padding-top: 0%;
   padding-left: 3%;
   padding-right: 3%;
@@ -31,16 +31,14 @@
 }
 
 .fig {
-    /* position: absolute;
+  /* position: absolute;
     margin-top: -75px;
     margin-left: 15px; */
-    color: #162a2c;
-    text-align: center;
-    font-size: larger;
-    font-weight: bold;
-  
+  color: #162a2c;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
 }
-
 
 .flex {
   display: flex;
@@ -53,22 +51,20 @@
 }
 
 header {
-justify-content: space-between;
-border-bottom: white solid 3px;
-margin-top: 2%;
-font-weight: bold;
+  justify-content: space-between;
+  border-bottom: white solid 3px;
+  margin-top: 2%;
+  font-weight: bold;
 
   & ul {
-  list-style: none;
-  font-size: x-large;
- 
+    list-style: none;
+    font-size: x-large;
 
     & li {
-    margin-right: 20px;
+      margin-right: 20px;
     }
- }
+  }
 }
-
 
 footer {
   & img {
@@ -82,10 +78,10 @@ footer {
 }
 
 .margint {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
   header {
     flex-direction: column;
     & ul {
@@ -103,6 +99,4 @@ footer {
     max-width: 40%;
     max-height: 40%;
   }
-
-
 }
