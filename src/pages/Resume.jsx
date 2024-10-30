@@ -1,8 +1,20 @@
 import "../App.css";
 import pdf from "../components/Resume2024.pdf";
+import ProgressBar from "react-bootstrap/ProgressBar";
+
+// const languageArray = [
+//   { title: "HTML", percentage: "50%" },
+//   { title: "JavaScript", percentage: "80%" },
+// ];
 export default function Resume() {
+  const HTML = 60;
+  const JavaScript = 80;
+  const React = 90;
   return (
     <div>
+      {/* <p>{languageArray.title}</p>
+      <ProgressBar label={`${languageArray.percentage}%`} /> */}
+
       <div class="left">
         <h2>
           Download my{" "}
@@ -12,9 +24,18 @@ export default function Resume() {
         </h2>
         <h3>Front-end Proficiencies</h3>
         <ul>
-          <li>HTML</li>
-          <li>JavaScript</li>
-          <li>React</li>
+          <li>
+            HTML
+            <ProgressBar now={HTML} label={`${HTML}%`} />
+          </li>
+          <li>
+            JavaScript
+            <ProgressBar now={JavaScript} label={`${JavaScript}%`} />
+          </li>
+          <li>
+            React
+            <ProgressBar now={React} label={`${React}%`} />
+          </li>
           <li>CSS</li>
           <li>JQuery</li>
           <li>Bootstrap</li>
