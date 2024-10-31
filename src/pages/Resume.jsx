@@ -5,12 +5,15 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 const languageArray = [
   { title: "HTML", percentage: "50" },
   { title: "JavaScript", percentage: "80" },
+  { title: "React", percentage: "90" },
+  { title: "JQuery", percentage: "70" },
+  { title: "NoSQL", percentage: "75" },
+  { title: "Express", percentage: "80" },
+  { title: "PSQL", percentage: "60" },
+  { title: "Node.js", percentage: "85" },
+  { title: "MongoDB", percentage: "75" },
 ];
 export default function Resume() {
-  const HTML = 50;
-  const JavaScript = 80;
-  const React = 90;
-  const CSS = 30;
   return (
     <div>
       <h2>
