@@ -2,20 +2,36 @@ import "../App.css";
 import pdf from "../components/Resume2024.pdf";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
-// const languageArray = [
-//   { title: "HTML", percentage: "50%" },
-//   { title: "JavaScript", percentage: "80%" },
-// ];
+const languageArray = [
+  { title: "HTML", percentage: "50" },
+  { title: "JavaScript", percentage: "80" },
+];
 export default function Resume() {
-  const HTML = 60;
+  const HTML = 50;
   const JavaScript = 80;
   const React = 90;
+  const CSS = 30;
   return (
     <div>
-      {/* <p>{languageArray.title}</p>
-      <ProgressBar label={`${languageArray.percentage}%`} /> */}
+      <h2>
+        Download my{" "}
+        <a href={pdf} target="_blank">
+          Resume
+        </a>
+      </h2>
+      {languageArray.map((language) => {
+        return (
+          <div>
+            <p>{language.title}</p>
+            <ProgressBar
+              now={language.percentage}
+              label={`${language.percentage}%`}
+            />
+          </div>
+        );
+      })}
 
-      <div class="left">
+      {/* <div class="left">
         <h2>
           Download my{" "}
           <a href={pdf} target="_blank">
@@ -36,7 +52,10 @@ export default function Resume() {
             React
             <ProgressBar now={React} label={`${React}%`} />
           </li>
-          <li>CSS</li>
+          <li>
+            CSS
+            <ProgressBar now={CSS} label={`${CSS}%`} />
+          </li>
           <li>JQuery</li>
           <li>Bootstrap</li>
         </ul>
@@ -48,7 +67,7 @@ export default function Resume() {
           <li>Node.js</li>
           <li>MongoDB</li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }
