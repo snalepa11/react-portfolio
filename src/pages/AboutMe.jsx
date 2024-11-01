@@ -19,7 +19,10 @@ export default function AboutMe() {
             expanding technical knowledge will make me an asset to any team as a
             product manager.
           </p>
-          <Button href="#">Resume</Button>
+          <p>Take a look at my Resume!</p>
+          <Button variant="light outline-dark" href="#">
+            Resume
+          </Button>
         </div>
         <img class="margint" id="headshot" src={headshot} alt="headshot" />
       </div>

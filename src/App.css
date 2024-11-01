@@ -10,6 +10,11 @@
   background-color: #d6e0e2;
 }
 
+.button {
+  background-color: white;
+  color: black;
+}
+
 .bold {
   font-weight: bold;
 }
