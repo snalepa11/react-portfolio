@@ -25,7 +25,7 @@ export default function Resume() {
       {languageArray.map((language) => {
         return (
           <div>
-            <p>{language.title}</p>
+            <p class="bold left margint">{language.title}</p>
             <ProgressBar
               now={language.percentage}
               label={`${language.percentage}%`}
