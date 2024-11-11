@@ -3,9 +3,8 @@ import NavTabs from "../components/NavTabs";
 
 export default function Header() {
   return (
-    <div>
+    <div class="hero">
       <header class="flex">
-        <h1>Sarah Nalepa</h1>
         <NavTabs />
       </header>
     </div>

@@ -6,14 +6,24 @@
   color: #162a2c;
 }
 
-* {
-  background-color: #d6e0e2;
+.icon {
+  margin-left: 5%;
+  max-height: 55px;
+  max-width: 55px;
 }
 
-.button {
-  background-color: white;
-  color: black;
+.hero {
+  background-color: #c8d9e6;
+  color: #567c8d;
 }
+
+/* .brown {x
+  color: #9d683f;
+} */
+
+/* * {
+  background-color: #d6e0e2;
+} */
 
 .bold {
   font-weight: bold;
@@ -21,10 +31,11 @@
 
 .left {
   text-align: left;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 .bio {
+  margin-top: 150px;
   max-width: 50%;
   text-align: left;
   margin-left: 10px;
@@ -35,12 +46,12 @@
 }
 
 #headshot {
-  max-height: 25%;
-  max-width: 25%;
+  max-height: 30%;
+  max-width: 30%;
   border-radius: 50%;
   border: white solid 6px;
   margin-bottom: 2%;
-  margin-left: 10%;
+  margin-left: 30%;
 }
 
 .tree {
@@ -72,7 +83,6 @@
 
 header {
   justify-content: space-between;
-  border-bottom: white solid 3px;
   margin-top: 2%;
   font-weight: bold;
 

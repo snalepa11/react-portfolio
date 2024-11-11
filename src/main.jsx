@@ -1,12 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import App from './App.jsx'
-import AboutMe from './pages/AboutMe.jsx'
-import Contact from './pages/Contact.jsx'
-import Portfolio from './pages/Portfolio.jsx'
-import Resume from './pages/Resume.jsx'
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import App from "./App.jsx";
+import AboutMe from "./pages/AboutMe.jsx";
+import Contact from "./pages/Contact.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,27 +13,22 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <AboutMe />
+        element: <AboutMe />,
       },
       {
         path: "/portfolio",
-        element: <Portfolio />
+        element: <Portfolio />,
       },
       {
         path: "/contact",
-        element: <Contact />
+        element: <Contact />,
       },
-      {
-        path: "/resume",
-        element: <Resume />
-      }
-    ]
+    ],
   },
-])
+]);
 
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
