@@ -27,7 +27,7 @@ export default function AboutMe() {
     <div>
       <div class="inline hero">
         <div class="bio">
-          <h1>Sarah Nalepa</h1>
+          <h1 class="font">Sarah Nalepa</h1>
           <p>Product Manager | Co-Founder</p>
           <p class="bold">Take a look at my Resume!</p>
           <Button variant="outline-dark light" href={pdf} target="_blank">
@@ -36,11 +36,11 @@ export default function AboutMe() {
         </div>
         <img class="margint3" id="headshot" src={headshot} alt="headshot" />
       </div>
-      <div class="margint">
-        <Card bg="secondary" text="light">
-          <Card.Body>
-            <Card.Title>A Bit About Me</Card.Title>
-            <Card.Text>
+      <div>
+        <div class="lgray">
+          <div class="para">
+            <h3>A Bit About Me</h3>
+            <p>
               Hello and welcome to my webpage! My name is Sarah and I am an
               aspiring product manager. I graduated with a Bachelor's and
               Master's in International Relations and have previously worked in
@@ -51,9 +51,9 @@ export default function AboutMe() {
               background in communication-based studies and roles combined with
               my rapidly expanding technical knowledge will make me an asset to
               any team as a product manager.
-            </Card.Text>
-          </Card.Body>
-        </Card>
+            </p>
+          </div>
+        </div>
 
         <h2 class="left margint">
           Languages I know and how much I use them...
