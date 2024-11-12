@@ -6,6 +6,10 @@ import backgroundImage from "../assets/backgroundphoto1.jpg";
 import github from "../assets/GH.jpeg";
 import stack from "../assets/stack.png";
 import LinkedIn from "../assets/LI.png";
+import Card from "react-bootstrap/Card";
+// import { useState } from "react";
+// import { Dialog, DialogPanel } from "@headlessui/react";
+// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function AboutMe() {
   const languageArray = [
@@ -24,7 +28,7 @@ export default function AboutMe() {
       <div class="inline">
         <div class="bio">
           <h1>Sarah Nalepa</h1>
-          <p>Software Developer | Product Manager</p>
+          <p>Product Manager | Co-Founder</p>
           <p class="bold">Take a look at my Resume!</p>
           <Button variant="light outline-dark" href={pdf} target="_blank">
             Resume
@@ -32,20 +36,28 @@ export default function AboutMe() {
         </div>
         <img class="margint" id="headshot" src={headshot} alt="headshot" />
       </div>
-      <div>
-        <h2>A Bit About Me</h2>
-        <p>
-          Hello and welcome to my webpage! My name is Sarah and I am an aspiring
-          product manager. I graduated with a Bachelor's and Master's in
-          International Relations and have previously worked in the not for
-          profit space. I recently graduated from the Northwestern full-stack
-          coding bootcamp where I learned the MERN stack. Since graduation I
-          have continued to hone my coding abilities, as well sharpen my
-          soft-skills. I believe my extensive background in communication-based
-          studies and roles combined with my rapidly expanding technical
-          knowledge will make me an asset to any team as a product manager.
-        </p>
-        <h2 class="left">Languages I know and how much I use them...</h2>
+      <div class="margint2">
+        <Card bg="secondary" text="light">
+          <Card.Body>
+            <Card.Title>A Bit About Me</Card.Title>
+            <Card.Text>
+              Hello and welcome to my webpage! My name is Sarah and I am an
+              aspiring product manager. I graduated with a Bachelor's and
+              Master's in International Relations and have previously worked in
+              the not for profit space. I recently graduated from the
+              Northwestern full-stack coding bootcamp where I learned the MERN
+              stack. Since graduation I have continued to hone my coding
+              abilities, as well sharpen my soft-skills. I believe my extensive
+              background in communication-based studies and roles combined with
+              my rapidly expanding technical knowledge will make me an asset to
+              any team as a product manager.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        <h2 class="left margint">
+          Languages I know and how much I use them...
+        </h2>
         {languageArray.map((language) => {
           return (
             <div>

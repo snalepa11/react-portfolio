@@ -12,6 +12,10 @@
   max-width: 55px;
 }
 
+.background {
+  background-color: beige;
+}
+
 .hero {
   background-color: #c8d9e6;
   color: #567c8d;
@@ -109,6 +113,11 @@ footer {
 
 .margint {
   margin-top: 100px;
+}
+
+.margint2 {
+  margin-top: 200px;
+  font-size: large;
 }
 
 @media (max-width: 500px) {
