@@ -25,18 +25,18 @@ export default function AboutMe() {
   ];
   return (
     <div>
-      <div class="inline">
+      <div class="inline hero">
         <div class="bio">
           <h1>Sarah Nalepa</h1>
           <p>Product Manager | Co-Founder</p>
           <p class="bold">Take a look at my Resume!</p>
-          <Button variant="light outline-dark" href={pdf} target="_blank">
+          <Button variant="outline-dark light" href={pdf} target="_blank">
             Resume
           </Button>
         </div>
-        <img class="margint" id="headshot" src={headshot} alt="headshot" />
+        <img class="margint3" id="headshot" src={headshot} alt="headshot" />
       </div>
-      <div class="margint2">
+      <div class="margint">
         <Card bg="secondary" text="light">
           <Card.Body>
             <Card.Title>A Bit About Me</Card.Title>
