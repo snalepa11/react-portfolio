@@ -48,12 +48,13 @@
   justify-content: space-between;
 }
 
-.lgray {
+.dblue {
   background-color: #567c8d;
-  color: #f5efeb;
+  color: white;
 }
 
 .para {
+  margin-bottom: 5%;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -137,7 +138,7 @@ footer {
 }
 
 .font {
-  font-size: xx-large;
+  font-size: 5vw;
 }
 
 @media (max-width: 500px) {

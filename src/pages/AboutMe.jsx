@@ -36,25 +36,24 @@ export default function AboutMe() {
         </div>
         <img class="margint3" id="headshot" src={headshot} alt="headshot" />
       </div>
-      <div>
-        <div class="lgray">
-          <div class="para">
-            <h3>A Bit About Me</h3>
-            <p>
-              Hello and welcome to my webpage! My name is Sarah and I am an
-              aspiring product manager. I graduated with a Bachelor's and
-              Master's in International Relations and have previously worked in
-              the not for profit space. I recently graduated from the
-              Northwestern full-stack coding bootcamp where I learned the MERN
-              stack. Since graduation I have continued to hone my coding
-              abilities, as well sharpen my soft-skills. I believe my extensive
-              background in communication-based studies and roles combined with
-              my rapidly expanding technical knowledge will make me an asset to
-              any team as a product manager.
-            </p>
-          </div>
+      <div class="dblue">
+        <div class="para">
+          <h3>A Bit About Me</h3>
+          <p>
+            Hello and welcome to my webpage! My name is Sarah and I am an
+            aspiring product manager. I graduated with a Bachelor's and Master's
+            in International Relations and have previously worked in the not for
+            profit space. I recently graduated from the Northwestern full-stack
+            coding bootcamp where I learned the MERN stack. Since graduation I
+            have continued to hone my coding abilities, as well sharpen my
+            soft-skills. I believe my extensive background in
+            communication-based studies and roles combined with my rapidly
+            expanding technical knowledge will make me an asset to any team as a
+            product manager.
+          </p>
         </div>
-
+      </div>
+      <div>
         <h2 class="left margint">
           Languages I know and how much I use them...
         </h2>
