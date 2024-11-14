@@ -57,7 +57,7 @@ export default function Contact() {
 
   return (
     <div>
-      <h1>Contact Form</h1>
+      <h1 class="blue">Contact Form</h1>
       <div class="para">
         <Form>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">

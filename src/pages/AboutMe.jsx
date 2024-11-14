@@ -54,7 +54,7 @@ export default function AboutMe() {
         </div>
       </div>
       <div>
-        <h2 class="left margint">
+        <h2 class="left margint gray">
           Languages I know and how much I use them...
         </h2>
         {languageArray.map((language) => {

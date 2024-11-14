@@ -148,6 +148,14 @@ footer {
 .font {
   font-size: 5vw;
 }
+.gray {
+  color: rgb(143, 137, 137);
+}
+
+.blue {
+  color: #567c8d;
+  font-weight: bold;
+}
 
 @media (max-width: 500px) {
   header {
