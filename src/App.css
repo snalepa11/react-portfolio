@@ -54,9 +54,8 @@
 }
 
 .para {
-  margin-bottom: 5%;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 13%;
+  margin-right: 13%;
 }
 
 .inline {
@@ -98,17 +97,25 @@
   justify-content: space-evenly;
 }
 
+.link-stlye {
+  text-decoration: none;
+  color: #567c8d;
+}
+
 header {
   justify-content: right;
-  font-weight: bold;
+  /* font-weight: bold; */
   background-color: aliceblue;
+  color: white;
 
   & ul {
     list-style: none;
     font-size: x-large;
+    display: inline-flex;
+    margin-top: 1%;
 
     & li {
-      margin-right: 20px;
+      margin-right: 50px;
     }
   }
 }
@@ -117,10 +124,11 @@ footer {
   & img {
     text-align: center;
     border-radius: 50%;
-    max-width: 5%;
-    max-height: 5%;
+    max-width: 4%;
+    max-height: 4%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 1%;
   }
 }
 
