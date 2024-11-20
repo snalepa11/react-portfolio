@@ -56,9 +56,9 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <div class="bgblue">
       <h1 class="blue">Contact Form</h1>
-      <div class="para">
+      <div>
         <Form>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label></Form.Label>
@@ -92,7 +92,12 @@ export default function Contact() {
             />
             <Form.Label></Form.Label>
           </Form.Group>
-          <Button variant="outline-secondary" type="submit" onClick={onSubmit}>
+          <Button
+            variant="outline-secondary"
+            type="submit"
+            class="marginb"
+            onClick={onSubmit}
+          >
             Send
           </Button>
           <Form.Group>

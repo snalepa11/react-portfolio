@@ -60,9 +60,10 @@ export default function AboutMe() {
         {languageArray.map((language) => {
           return (
             <div>
-              <p class="bold left">{language.title}</p>
+              <p class="left">{language.title}</p>
               <ProgressBar
-                // class="brown"
+                class="blue"
+                variant="info"
                 now={language.percentage}
                 label={`${language.percentage}%`}
               />

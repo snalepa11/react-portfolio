@@ -1,4 +1,5 @@
 #root {
+  background-color: aliceblue;
   text-align: center;
   padding-top: 0%;
   padding-left: 0%;
@@ -24,12 +25,10 @@
   background-color: #d6e0e2;
 } */
 
-.bold {
-  font-weight: bold;
-}
-
 .left {
   text-align: left;
+  color: #567c8d;
+  font-weight: bold;
   margin-left: 10px;
 }
 
@@ -54,8 +53,14 @@
 }
 
 .para {
+  border-top: #567c8d solid 30px;
+  border-bottom: #567c8d solid 30px;
   margin-left: 13%;
   margin-right: 13%;
+}
+
+.marginb {
+  margin-bottom: 5%;
 }
 
 .inline {
@@ -155,6 +160,11 @@ footer {
 .blue {
   color: #567c8d;
   font-weight: bold;
+  background-color: aliceblue;
+}
+
+.bgblue {
+  background-color: aliceblue;
 }
 
 @media (max-width: 500px) {
