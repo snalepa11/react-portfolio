@@ -34,7 +34,7 @@ export default function AboutMe() {
             Resume
           </Button>
         </div>
-        <img class="margint3" id="headshot" src={headshot} alt="headshot" />
+        <img class="margint" id="headshot" src={headshot} alt="headshot" />
       </div>
       <div class="dblue">
         <div class="para">
@@ -53,8 +53,8 @@ export default function AboutMe() {
           </p>
         </div>
       </div>
-      <div>
-        <h2 class="left margint gray">
+      <div class="contact">
+        <h2 class="left margint ">
           Languages I know and how much I use them...
         </h2>
         {languageArray.map((language) => {

@@ -56,8 +56,8 @@ export default function Contact() {
   };
 
   return (
-    <div class="bgblue">
-      <h1 class="blue">Contact Form</h1>
+    <div class="bgblue contact">
+      <h1 class="blue margint3">Contact Form</h1>
       <div>
         <Form>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">

@@ -7,6 +7,20 @@
   color: #162a2c;
 }
 
+.body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+.margint {
+  margin-top: 100px;
+  min-height: 50px;
+}
+
+.contact {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 .icon {
   margin-left: 5%;
   max-height: 55px;
@@ -16,14 +30,6 @@
 .background {
   background-color: beige;
 }
-
-/* .brown {x
-  color: #9d683f;
-} */
-
-/* * {
-  background-color: #d6e0e2;
-} */
 
 .left {
   text-align: left;
@@ -79,7 +85,6 @@
   max-height: 80%;
   max-width: 80%;
   border: white solid 3px;
-  margin-right: 20px;
 }
 
 .fig {
@@ -99,7 +104,7 @@
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 
 .link-stlye {
@@ -137,10 +142,6 @@ footer {
   }
 }
 
-.margint {
-  margin-top: 100px;
-}
-
 .margint2 {
   margin-top: 200px;
   font-size: large;
@@ -152,9 +153,6 @@ footer {
 
 .font {
   font-size: 5vw;
-}
-.gray {
-  color: rgb(143, 137, 137);
 }
 
 .blue {

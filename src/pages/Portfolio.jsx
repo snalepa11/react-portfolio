@@ -1,5 +1,5 @@
 import "../App.css";
-import tree from "../assets/tree.jpeg";
+import tree from "../assets/abstract.jpeg";
 import record from "../assets/record player.jpeg";
 import linen from "../assets/linen.jpeg";
 import tulips from "../assets/tulips.jpeg";
@@ -10,7 +10,7 @@ export default function Portfolio() {
   return (
     <div class="bgblue">
       <div class="margint3">
-        <h1 class="blue">Portfolio</h1>
+        <h1 class="blue marginb">Portfolio</h1>
         <div class="flex-wrap">
           <div>
             <a href="https://github.com/snalepa11/Note-taker">
