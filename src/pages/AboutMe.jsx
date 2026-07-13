@@ -1,75 +1,169 @@
-import headshot from "../assets/headshot.jpeg";
+import backgroundPhoto from "../assets/backgroundphoto1.jpg";
+import profilePhoto from "../assets/japansarah.jpeg";
 import Button from "react-bootstrap/Button";
 import pdf from "../components/Resume2024.pdf";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import backgroundImage from "../assets/backgroundphoto1.jpg";
-import github from "../assets/GH.jpeg";
-import stack from "../assets/stack.png";
-import LinkedIn from "../assets/LI.png";
-import Card from "react-bootstrap/Card";
-// import { useState } from "react";
-// import { Dialog, DialogPanel } from "@headlessui/react";
-// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import redabs3 from "../assets/redabs3.jpg";
+import abs3 from "../assets/abs 3.jpg";
+import tree from "../assets/abstract.jpeg";
+import "../App.css";
 
 export default function AboutMe() {
   const languageArray = [
-    { title: "HTML", percentage: "50" },
+    { title: "HTML", percentage: "80" },
     { title: "JavaScript", percentage: "80" },
+    { title: "PowerBI", percentage: "80" },
+
+    { title: "Tableau", percentage: "90" },
+    { title: "SQL", percentage: "99" },
+    { title: "Python", percentage: "95" },
     { title: "React", percentage: "90" },
-    { title: "JQuery", percentage: "70" },
-    { title: "NoSQL", percentage: "75" },
-    { title: "Express", percentage: "80" },
-    { title: "PSQL", percentage: "60" },
-    { title: "Node.js", percentage: "85" },
-    { title: "MongoDB", percentage: "75" },
+    { title: "JQuery", percentage: "60" },
+    { title: "Asana", percentage: "90" },
+
+    { title: "PSQL", percentage: "80" },
+    { title: "Node.js", percentage: "50" },
+    { title: "Notion", percentage: "99" },
   ];
+
   return (
-    <div>
-      <div class="inline hero">
-        <div class="bio">
-          <h1 class="font">Sarah Nalepa</h1>
-          <p>Product Manager | Co-Founder</p>
-          <p class="bold">Take a look at my Resume!</p>
-          <Button variant="outline-dark light" href={pdf} target="_blank">
-            Resume
-          </Button>
+    <div className="about-page-container">
+      {/* Sticky Left Hero Section */}
+      <div className="hero-sidebar-sticky">
+        <div className="hero-image-grid">
+          <img className="hero-image" src={redabs3} alt="Portfolio image 1" />
+          <img className="hero-image" src={redabs3} alt="Portfolio image 2" />
+          <img className="hero-image" src={abs3} alt="Portfolio image 3" />
+          <img className="hero-image" src={tree} alt="Portfolio image 4" />
         </div>
-        <img class="margint" id="headshot" src={headshot} alt="headshot" />
-      </div>
-      <div class="dblue">
-        <div class="para">
-          <h3>A Bit About Me</h3>
-          <p>
-            Hello and welcome to my webpage! My name is Sarah and I am an
-            aspiring product manager. I graduated with a Bachelor's and Master's
-            in International Relations and have previously worked in the not for
-            profit space. I recently graduated from the Northwestern full-stack
-            coding bootcamp where I learned the MERN stack. Since graduation I
-            have continued to hone my coding abilities, as well sharpen my
-            soft-skills. I believe my extensive background in
-            communication-based studies and roles combined with my rapidly
-            expanding technical knowledge will make me an asset to any team as a
-            product manager.
-          </p>
+
+        <div className="hero-content">
+          <h1 className="hero-title">SARAH NALEPA</h1>
+          <div>
+            <p className="hero-subtitle">
+              Resilient. Collaborative. Built to Solve Complex Problems.
+            </p>
+
+            <p className="hero-cta">
+              Take a look at my Resume! <span className="arrow-icon">→</span>
+            </p>
+            <Button
+              variant="outline-light"
+              href={pdf}
+              target="_blank"
+              style={{
+                borderColor: "#fff",
+                color: "#fff",
+                padding: "12px 30px",
+                fontSize: "12px",
+                letterSpacing: "2px",
+                textTransform: "uppercase",
+                fontWeight: "600",
+              }}
+            >
+              View Resume
+            </Button>
+          </div>
         </div>
       </div>
-      <div class="contact">
-        <h2 class="left margint ">
-          Languages I know and how much I use them...
-        </h2>
-        {languageArray.map((language) => {
-          return (
-            <div>
-              <p class="left">{language.title}</p>
-              <ProgressBar
-                class="blue"
-                variant="info"
-                now={language.percentage}
-                label={`${language.percentage}%`}
-              />
+
+      {/* Scrollable Right Content with Background Image */}
+      <div className="content-scrollable-right">
+        {/* Profile Photo Section */}
+        <div className="profile-photo-section">
+          <img
+            src={profilePhoto}
+            alt="Sarah Nalepa"
+            className="profile-photo-framed"
+          />
+        </div>
+
+        <div
+          className="bio-with-background"
+          style={{ backgroundImage: `url(${backgroundPhoto})` }}
+        >
+          <div className="hero-bio-overlay">
+            <div className="bio-content">
+              <h3>A Bit About Me</h3>
+              <p>
+                Hello and welcome to my webpage! My name is Sarah, and I am a
+                Product Manager with a multidisciplinary background spanning
+                product development, operations, legal administration, and
+                user-centered problem solving. I hold both a Bachelor's and
+                Master's degree in International Relations, where I developed
+                strong research, analytical, and communication skills while
+                studying complex global, social, and economic challenges.
+              </p>
+              <br />
+              <p>
+                What sets me apart as a product manager is my ability to combine
+                analytical thinking with empathy. Through my experience as an
+                Associate Product Manager and my Data Analytics Fellowship, I've
+                conducted market research, gathered and prioritized
+                requirements, translated business needs into actionable product
+                specifications, and leveraged Python, SQL, and Tableau to turn
+                data into insights that drive decision-making. My background in
+                legal operations and executive support strengthened my ability
+                to manage competing priorities, communicate with stakeholders at
+                every level, and bring structure to complex, fast-moving
+                projects. Whether I'm interviewing users, analyzing product
+                performance, or coordinating cross-functional teams, I enjoy
+                bringing clarity to ambiguity and ensuring every decision is
+                grounded in both data and user needs.
+              </p>
+              <br />
+              <p>
+                Beyond my technical and professional experience, I bring a
+                growth mindset that has shaped every stage of my career. I've
+                never been afraid to step into unfamiliar territory, whether
+                that meant transitioning from international relations into
+                technology, building award-winning applications, or continuously
+                expanding my analytical skill set. I believe the best product
+                managers are lifelong learners who ask thoughtful questions,
+                embrace feedback, and remain relentlessly focused on improving
+                the customer experience. I thrive in collaborative environments
+                where curiosity is encouraged, and I'm excited to contribute
+                that mindset to a team building products that make a meaningful
+                impact.
+              </p>
             </div>
-          );
-        })}
+          </div>
+        </div>
+
+        <div className="skills-section">
+          <h2
+            style={{
+              fontSize: "14px",
+              fontWeight: "600",
+              marginBottom: "40px",
+              textAlign: "left",
+              maxWidth: "1200px",
+              margin: "0 auto 40px",
+              letterSpacing: "1px",
+            }}
+          >
+            LANGUAGES & TECHNOLOGIES
+          </h2>
+          <div className="skills-grid">
+            {languageArray.map((language, index) => {
+              return (
+                <div key={index} className="skill-item">
+                  <p>{language.title}</p>
+                  <div className="skill-progress-bar">
+                    <div
+                      className="skill-progress-fill"
+                      style={{ width: `${language.percentage}%` }}
+                    >
+                      <span className="skill-percentage">
+                        {language.percentage}%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );

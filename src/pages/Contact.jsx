@@ -1,7 +1,4 @@
 import "../App.css";
-import Form from "react-bootstrap/Form";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "react-bootstrap/Button";
 import { validateEmail } from "../utils/helpers";
 import { useState } from "react";
 
@@ -13,12 +10,10 @@ export default function Contact() {
   const [message, setMessage] = useState("");
 
   const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, username, and password
     if (inputType === "email") {
       setEmail(inputValue);
     } else if (inputType === "name") {
@@ -43,71 +38,74 @@ export default function Contact() {
       setErrorMessage("Please fill out the full form.");
       setNameErrorMessage(true);
     } else {
-      setErrorMessage("Success!");
+      setErrorMessage("Success! Your message has been sent.");
       setNameErrorMessage(true);
     }
-    // if (email !== "") {
-    //   setErrorMessage('Success!');
-    //   setNameErrorMessage(true);
-    // }
     setTimeout(() => {
       setNameErrorMessage(false);
     }, 3000);
   };
 
   return (
-    <div class="bgblue contact">
-      <h1 class="blue margint3">Contact Form</h1>
-      <div>
-        <Form>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label></Form.Label>
-            <Form.Control
+    <div className="contact-section">
+      <div className="contact-container">
+        <h1 className="contact-title">CONTACT</h1>
+
+        <form className="contact-form" onSubmit={onSubmit}>
+          <div className="form-group">
+            <label className="form-label">Your Name</label>
+            <input
+              className="form-control"
               onChange={handleInputChange}
               value={name}
               type="text"
               name="name"
-              placeholder="Enter Name"
+              placeholder="Enter your name"
             />
-          </Form.Group>
+          </div>
 
-          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Control
+          <div className="form-group">
+            <label className="form-label">Email Address</label>
+            <input
+              className="form-control"
               onChange={handleInputChange}
               value={email}
               type="email"
               name="email"
               placeholder="name@example.com"
             />
-            <Form.Label></Form.Label>
-          </Form.Group>
+          </div>
 
-          <Form.Group>
-            <Form.Control
-              as="textarea"
+          <div className="form-group">
+            <label className="form-label">Message</label>
+            <textarea
+              className="form-control"
               onChange={handleInputChange}
               value={message}
               name="message"
-              rows={3}
+              rows={6}
+              placeholder="Your message..."
             />
-            <Form.Label></Form.Label>
-          </Form.Group>
-          <Button
-            variant="outline-secondary"
-            type="submit"
-            class="marginb"
-            onClick={onSubmit}
-          >
-            Send
-          </Button>
-          <Form.Group>
-            {nameErrorMessage ? (
-              <Form.Text className="text-muted">{errorMessage}</Form.Text>
-            ) : (
-              ""
-            )}
-          </Form.Group>
-        </Form>
+          </div>
+
+          {nameErrorMessage && (
+            <div style={{
+              marginBottom: '20px',
+              padding: '12px',
+              backgroundColor: errorMessage.includes('Success') ? '#d4edda' : '#f8d7da',
+              color: errorMessage.includes('Success') ? '#155724' : '#721c24',
+              border: `1px solid ${errorMessage.includes('Success') ? '#c3e6cb' : '#f5c6cb'}`,
+              fontSize: '14px',
+              textAlign: 'left'
+            }}>
+              {errorMessage}
+            </div>
+          )}
+
+          <button type="submit" className="submit-btn">
+            Send Message
+          </button>
+        </form>
       </div>
     </div>
   );

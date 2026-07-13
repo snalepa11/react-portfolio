@@ -1,71 +1,123 @@
 import "../App.css";
 import tree from "../assets/abstract.jpeg";
-import record from "../assets/record player.jpeg";
 import linen from "../assets/linen.jpeg";
 import tulips from "../assets/tulips.jpeg";
 import paint from "../assets/paint.jpeg";
 import shells from "../assets/stationary.jpeg";
 
 export default function Portfolio() {
+  const projects = [
+    {
+      title: "SOCIAL MEDIA\nSTRATEGY",
+      client: "Express Note Taker",
+      type: "Full-Stack Application",
+      by: "Sarah Nalepa",
+      description:
+        "A comprehensive note-taking application built with Express.js. This strategy focused on creating an intuitive user interface with persistent data storage. The application allows users to create, read, and manage notes effectively with a clean, minimalist design approach.",
+      image: tree,
+      link: "https://github.com/snalepa11/Note-taker",
+      ctaText: "View on GitHub",
+    },
+    {
+      title: "PRO-\nPOSAL",
+      client: "SVG Logo Maker",
+      type: "Node.js CLI Tool",
+      by: "Sarah Nalepa",
+      description:
+        "A command-line application for generating custom SVG logos. This proposal-driven project demonstrates proficiency in Node.js, inquirer for user input, and SVG generation. Users can create professional logos by selecting shapes, colors, and text through an interactive CLI.",
+      image: linen,
+      link: "https://github.com/snalepa11/SVG-logo-maker",
+      ctaText: "Explore Project",
+    },
+    {
+      title: "ANALYTICS\nREPORT",
+      client: "Random Password Generator",
+      type: "Frontend Web App",
+      by: "Sarah Nalepa",
+      description:
+        "A secure password generation tool that creates randomized passwords based on user-selected criteria. This analytics-driven application features customizable length and character type options, demonstrating strong understanding of JavaScript logic and DOM manipulation.",
+      image: tulips,
+      link: "https://snalepa11.github.io/random-password-generator/",
+      ctaText: "View Live Demo",
+    },
+    {
+      title: "E-COMMERCE\nPLATFORM",
+      client: "ORM E-Commerce",
+      type: "Backend API",
+      by: "Sarah Nalepa",
+      description:
+        "A robust back-end e-commerce platform utilizing Object-Relational Mapping (ORM) with Sequelize. Features include product management, category organization, and tag associations. Built with Express.js and MySQL to demonstrate RESTful API design and database relationships.",
+      image: paint,
+      link: "https://github.com/snalepa11/ORM-Ecommerce",
+      ctaText: "View Repository",
+    },
+    {
+      title: "WEATHER\nAPP",
+      client: "API Weather Application",
+      type: "Frontend Integration",
+      by: "Sarah Nalepa",
+      description:
+        "A dynamic weather application that integrates third-party API data to provide real-time weather information. Features include city search functionality, current conditions display, and multi-day forecasts. Demonstrates API integration and asynchronous JavaScript.",
+      image: shells,
+      link: "https://snalepa11.github.io/weather-app/",
+      ctaText: "Launch App",
+    },
+  ];
+
   return (
-    <div class="bgblue">
-      <div class="margint3">
-        <h1 class="blue marginb">Portfolio</h1>
-        <div class="flex-wrap">
-          <div>
-            <a href="https://github.com/snalepa11/Note-taker">
-              <img class="tree" src={tree} alt="a palm tree by a white house" />
-            </a>
-            <figcaption class="fig">Express Note Taker</figcaption>
+    <div className="portfolio-section">
+      <div className="portfolio-header">
+        <h1 className="portfolio-title">PORTFOLIO</h1>
+      </div>
+
+      <div className="portfolio-grid">
+        {projects.map((project, index) => (
+          <div key={index} className="portfolio-card">
+            {index % 2 === 0 ? (
+              <>
+                <div className="card-content">
+                  <div className="card-meta">
+                    <span>CLIENT NAME</span>
+                    <span>PROJECT TYPE</span>
+                    <span>CREATED BY</span>
+                    <span>ROLE</span>
+                  </div>
+                  <div className="card-meta" style={{ opacity: 1, marginBottom: '40px' }}>
+                    <span>{project.client}</span>
+                    <span>{project.type}</span>
+                    <span>{project.by}</span>
+                    <span>Developer</span>
+                  </div>
+                  <h2 className="card-title">{project.title}</h2>
+                  <p className="card-description">{project.description}</p>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="card-link">
+                    {project.ctaText} →
+                  </a>
+                </div>
+                <img className="card-image" src={project.image} alt={project.client} />
+              </>
+            ) : (
+              <>
+                <img className="card-image" src={project.image} alt={project.client} />
+                <div className="card-content">
+                  <div className="card-meta">
+                    <span>CLIENT NAME</span>
+                    <span>PROJECT TYPE</span>
+                  </div>
+                  <div className="card-meta" style={{ opacity: 1, marginBottom: '40px' }}>
+                    <span>{project.client}</span>
+                    <span>{project.type}</span>
+                  </div>
+                  <h2 className="card-title">{project.title}</h2>
+                  <p className="card-description">{project.description}</p>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="card-link">
+                    {project.ctaText} →
+                  </a>
+                </div>
+              </>
+            )}
           </div>
-          <div>
-            <a href="https://github.com/snalepa11/sql-employee-tracker">
-              {" "}
-              <img class="tree" src={record} alt="A blue record player" />
-            </a>
-            <figcaption class="fig">PSQL Employee Tracker</figcaption>
-          </div>
-          <div>
-            <a href="https://github.com/snalepa11/SVG-logo-maker">
-              <img
-                class="tree"
-                src={linen}
-                alt="white curtains blowing in the wind"
-              />
-            </a>
-            <figcaption class="fig">Node.js SVG Logo Maker</figcaption>
-          </div>
-          <div>
-            <a href="https://github.com/snalepa11/random-password-generator">
-              <img
-                class="tree"
-                src={tulips}
-                alt="white tulips in a brown paper bag"
-              />
-            </a>
-            <a href="https://snalepa11.github.io/random-password-generator/">
-              <figcaption class="fig">Random Password Generator</figcaption>
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com/snalepa11/ORM-Ecommerce">
-              <img
-                class="tree"
-                src={paint}
-                alt="blue paint smeared on white canvas"
-              />
-            </a>
-            <figcaption class="fig">ORM E-Commerce Website</figcaption>
-          </div>
-          <div>
-            <a href="https://github.com/snalepa11/weather-app">
-              <img class="tree" src={shells} alt="cream scattered stationary" />
-            </a>
-            <a href="https://snalepa11.github.io/weather-app/">
-              <figcaption class="fig">API Weather App</figcaption>
-            </a>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
