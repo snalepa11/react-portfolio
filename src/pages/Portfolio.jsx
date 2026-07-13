@@ -82,7 +82,10 @@ export default function Portfolio() {
                     <span>CREATED BY</span>
                     <span>ROLE</span>
                   </div>
-                  <div className="card-meta" style={{ opacity: 1, marginBottom: '40px' }}>
+                  <div
+                    className="card-meta"
+                    style={{ opacity: 1, marginBottom: "40px" }}
+                  >
                     <span>{project.client}</span>
                     <span>{project.type}</span>
                     <span>{project.by}</span>
@@ -90,27 +93,48 @@ export default function Portfolio() {
                   </div>
                   <h2 className="card-title">{project.title}</h2>
                   <p className="card-description">{project.description}</p>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="card-link">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-link"
+                  >
                     {project.ctaText} →
                   </a>
                 </div>
-                <img className="card-image" src={project.image} alt={project.client} />
+                <img
+                  className="card-image"
+                  src={project.image}
+                  alt={project.client}
+                />
               </>
             ) : (
               <>
-                <img className="card-image" src={project.image} alt={project.client} />
+                <img
+                  className="card-image"
+                  src={project.image}
+                  alt={project.client}
+                />
                 <div className="card-content">
                   <div className="card-meta">
                     <span>CLIENT NAME</span>
                     <span>PROJECT TYPE</span>
                   </div>
-                  <div className="card-meta" style={{ opacity: 1, marginBottom: '40px' }}>
+                  <div
+                    className="card-meta"
+                    style={{ opacity: 1, marginBottom: "40px" }}
+                  >
                     <span>{project.client}</span>
                     <span>{project.type}</span>
                   </div>
                   <h2 className="card-title">{project.title}</h2>
                   <p className="card-description">{project.description}</p>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="card-link">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-link"
+                  >
                     {project.ctaText} →
                   </a>
                 </div>

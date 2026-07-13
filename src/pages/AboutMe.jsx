@@ -1,7 +1,7 @@
 import backgroundPhoto from "../assets/backgroundphoto1.jpg";
 import profilePhoto from "../assets/japansarah.jpeg";
 import Button from "react-bootstrap/Button";
-import pdf from "../components/Resume2024.pdf";
+import pdf from "../components/SarahNalepaResume.pdf";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import abs3 from "../assets/abs 3.jpg";
 import tree from "../assets/abstract.jpeg";
