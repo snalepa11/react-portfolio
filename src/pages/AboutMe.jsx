@@ -3,9 +3,10 @@ import profilePhoto from "../assets/japansarah.jpeg";
 import Button from "react-bootstrap/Button";
 import pdf from "../components/Resume2024.pdf";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import redabs3 from "../assets/redabs3.jpg";
 import abs3 from "../assets/abs 3.jpg";
 import tree from "../assets/abstract.jpeg";
+import redabs3 from "../assets/redabs3.jpg";
+import sunabs from "../assets/sunabs.jpg";
 import "../App.css";
 
 export default function AboutMe() {
@@ -31,10 +32,7 @@ export default function AboutMe() {
       {/* Sticky Left Hero Section */}
       <div className="hero-sidebar-sticky">
         <div className="hero-image-grid">
-          <img className="hero-image" src={redabs3} alt="Portfolio image 1" />
-          <img className="hero-image" src={redabs3} alt="Portfolio image 2" />
-          <img className="hero-image" src={abs3} alt="Portfolio image 3" />
-          <img className="hero-image" src={tree} alt="Portfolio image 4" />
+          <img className="hero-image" src={sunabs} alt="Portfolio image 1" />
         </div>
 
         <div className="hero-content">
