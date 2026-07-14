@@ -49,7 +49,13 @@ export default function Contact() {
     const templateParams = {
       from_name: name,
       from_email: email,
-      message: message,
+      message: ` 
+    From : ${email}
+
+    Name of Person: ${name}
+
+    Message: ${message}
+    `,
     };
 
     emailjs
@@ -57,7 +63,7 @@ export default function Contact() {
         "service_p0o6jeb", // Your EmailJS Service ID
         "template_rbbfbia", // Your EmailJS Template ID
         templateParams,
-        "zmPnIhutbJYocSKRs" // Your Public Key
+        "zmPnIhutbJYocSKRs", // Your Public Key
       )
       .then(
         () => {
@@ -74,7 +80,7 @@ export default function Contact() {
           setNameErrorMessage(true);
           console.error("EmailJS error:", error);
           setTimeout(() => setNameErrorMessage(false), 3000);
-        }
+        },
       );
   };
 
@@ -121,15 +127,19 @@ export default function Contact() {
           </div>
 
           {nameErrorMessage && (
-            <div style={{
-              marginBottom: '20px',
-              padding: '12px',
-              backgroundColor: errorMessage.includes('Success') ? '#d4edda' : '#f8d7da',
-              color: errorMessage.includes('Success') ? '#155724' : '#721c24',
-              border: `1px solid ${errorMessage.includes('Success') ? '#c3e6cb' : '#f5c6cb'}`,
-              fontSize: '14px',
-              textAlign: 'left'
-            }}>
+            <div
+              style={{
+                marginBottom: "20px",
+                padding: "12px",
+                backgroundColor: errorMessage.includes("Success")
+                  ? "#d4edda"
+                  : "#f8d7da",
+                color: errorMessage.includes("Success") ? "#155724" : "#721c24",
+                border: `1px solid ${errorMessage.includes("Success") ? "#c3e6cb" : "#f5c6cb"}`,
+                fontSize: "14px",
+                textAlign: "left",
+              }}
+            >
               {errorMessage}
             </div>
           )}
