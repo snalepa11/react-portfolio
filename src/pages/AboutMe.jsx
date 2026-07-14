@@ -39,7 +39,7 @@ export default function AboutMe() {
           <h1 className="hero-title">SARAH NALEPA</h1>
           <div>
             <p className="hero-subtitle">
-              Resilient. Collaborative. Tech-led Decision Making.
+              Bridging business goals, user needs, and technical solutions.
             </p>
 
             <p className="hero-cta">
