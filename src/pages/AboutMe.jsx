@@ -3,7 +3,7 @@ import profilePhoto from "../assets/japansarah.jpeg";
 import Button from "react-bootstrap/Button";
 import pdf from "../components/SarahNalepaResume.pdf";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import abs3 from "../assets/abs 3.jpg";
+import abs3 from "../assets/abs3.jpg";
 import tree from "../assets/abstract.jpeg";
 import redabs3 from "../assets/redabs3.jpg";
 import sunabs from "../assets/sunabs.jpg";
@@ -39,7 +39,7 @@ export default function AboutMe() {
           <h1 className="hero-title">SARAH NALEPA</h1>
           <div>
             <p className="hero-subtitle">
-              Resilient. Collaborative. Built to Solve Complex Problems.
+              Resilient. Collaborative. Tech-led Decision Making.
             </p>
 
             <p className="hero-cta">

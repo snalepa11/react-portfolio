@@ -1,47 +1,47 @@
 import "../App.css";
-import tree from "../assets/abstract.jpeg";
+import abs3 from "../assets/abs3.jpg";
 import linen from "../assets/linen.jpeg";
-import tulips from "../assets/tulips.jpeg";
+// import tulips from "../assets/tulips.jpeg";
 import paint from "../assets/paint.jpeg";
 import shells from "../assets/stationary.jpeg";
 
 export default function Portfolio() {
   const projects = [
     {
-      title: "SOCIAL MEDIA\nSTRATEGY",
-      client: "Express Note Taker",
-      type: "Full-Stack Application",
+      title: "PROFOUND\nLEADERSHIP\nWEBSITE",
+      client: "Profound Leadership",
+      type: "Website",
       by: "Sarah Nalepa",
       description:
-        "A comprehensive note-taking application built with Express.js. This strategy focused on creating an intuitive user interface with persistent data storage. The application allows users to create, read, and manage notes effectively with a clean, minimalist design approach.",
-      image: tree,
-      link: "https://github.com/snalepa11/Note-taker",
-      ctaText: "View on GitHub",
+        "A comprehensive non-profit website built with Typescript. This strategy focused on creating an intuitive user interface while honoring the client's branding. The website allows the user to clearly undersatnd teh non-profit mission and contact the business owner for inquiries",
+      image: abs3,
+      link: "https://profoundleadership.org/",
+      ctaText: "Have a look at the website",
     },
     {
-      title: "PRO-\nPOSAL",
-      client: "SVG Logo Maker",
-      type: "Node.js CLI Tool",
+      title: "BREEZI",
+      client: "Bllomberg Hackathon",
+      type: "Typescript iOS application",
       by: "Sarah Nalepa",
       description:
-        "A command-line application for generating custom SVG logos. This proposal-driven project demonstrates proficiency in Node.js, inquirer for user input, and SVG generation. Users can create professional logos by selecting shapes, colors, and text through an interactive CLI.",
+        "Breezi is a TypeScript-based iOS application that empowers New Yorkers to make informed decisions using real-time weather and air quality data. The app features location-based AQI insights, historical weather comparisons, and an AI-powered chatbot that delivers personalized recommendations for outdoor activities and health-conscious planning.",
       image: linen,
-      link: "https://github.com/snalepa11/SVG-logo-maker",
+      link: "https://github.com/snalepa11/Breezi",
       ctaText: "Explore Project",
     },
     {
-      title: "ANALYTICS\nREPORT",
+      title: "GUN\nVIOLENCE\nANALYTICS\nREPORT",
       client: "Random Password Generator",
       type: "Frontend Web App",
       by: "Sarah Nalepa",
       description:
         "A secure password generation tool that creates randomized passwords based on user-selected criteria. This analytics-driven application features customizable length and character type options, demonstrating strong understanding of JavaScript logic and DOM manipulation.",
-      image: tulips,
+      image: paint,
       link: "https://snalepa11.github.io/random-password-generator/",
       ctaText: "View Live Demo",
     },
     {
-      title: "E-COMMERCE\nPLATFORM",
+      title: "CIVIC\nBRIDGE",
       client: "ORM E-Commerce",
       type: "Backend API",
       by: "Sarah Nalepa",
@@ -52,7 +52,7 @@ export default function Portfolio() {
       ctaText: "View Repository",
     },
     {
-      title: "WEATHER\nAPP",
+      title: "PYTHON\nEDA",
       client: "API Weather Application",
       type: "Frontend Integration",
       by: "Sarah Nalepa",

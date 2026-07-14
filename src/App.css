@@ -300,6 +300,16 @@ header {
   object-fit: cover;
 }
 
+.portfolio-card:first-child .card-image {
+  object-position: center 30%;
+  max-width: 500px;
+  max-height: 500px;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  object-fit: cover;
+}
+
 .card-content {
   padding: 60px;
   display: flex;
