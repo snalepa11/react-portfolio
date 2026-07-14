@@ -64,9 +64,6 @@ export default function AboutMe() {
               Bridging business goals, user needs, and technical solutions.
             </p>
 
-            <p className="hero-cta">
-              Take a look at my Resume! <span className="arrow-icon">→</span>
-            </p>
             <Button
               variant="outline-light"
               href={pdf}
@@ -81,7 +78,7 @@ export default function AboutMe() {
                 fontWeight: "600",
               }}
             >
-              View Resume
+              Take a look at my Resume!
             </Button>
           </div>
         </div>
