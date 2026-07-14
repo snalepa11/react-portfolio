@@ -35,7 +35,7 @@ export default function Portfolio() {
       type: "Data Analysis",
       by: "Sarah Nalepa",
       description:
-        "A secure password generation tool that creates randomized passwords based on user-selected criteria. This analytics-driven application features customizable length and character type options, demonstrating strong understanding of JavaScript logic and DOM manipulation.",
+        "Analyzed historical NYPD shooting incident data using Python to uncover trends in location, demographics, and incident frequency across New York City. Developed interactive visualizations and data-driven insights to identify patterns that can support informed discussions around public safety and resource allocation.",
       image: paint,
       link: "https://github.com/jenellecodes/NYPD-Shooting-Incident-Data-Analysis",
       ctaText: "Explore Analysis",
@@ -46,7 +46,7 @@ export default function Portfolio() {
       type: "Web3 iOS Application",
       by: "Sarah Nalepa",
       description:
-        "A robust back-end e-commerce platform utilizing Object-Relational Mapping (ORM) with Sequelize. Features include product management, category organization, and tag associations. Built with Express.js and MySQL to demonstrate RESTful API design and database relationships.",
+        "This application was designed to help bridge the gap between unbanked individuals and the modern financial system. By leveraging Web3 technology and data-driven insights, it aims to reduce barriers to financial access—particularly for those deterred by traditional banking fees such as overdraft charges and minimum balance requirements—and provide a more inclusive pathway to financial services.",
       image: paint,
       link: "https://github.com/snalepa11/first-step",
       ctaText: "View Repository",
@@ -57,7 +57,7 @@ export default function Portfolio() {
       type: "Data Analysis",
       by: "Sarah Nalepa",
       description:
-        "A dynamic weather application that integrates third-party API data to provide real-time weather information. Features include city search functionality, current conditions display, and multi-day forecasts. Demonstrates API integration and asynchronous JavaScript.",
+        "This project explores consumer shopping behavior through data analysis, revealing trends in purchasing habits, demographics, and product preferences. By combining data cleaning, exploratory analysis, and visualization, it demonstrates how businesses can leverage customer data to improve decision-making and enhance the shopping experience.",
       image: shells,
       link: "https://github.com/snalepa11/shopping-behavior-",
       ctaText: "Explore Analysis",
