@@ -37,7 +37,7 @@ export default function Portfolio() {
       description:
         "A secure password generation tool that creates randomized passwords based on user-selected criteria. This analytics-driven application features customizable length and character type options, demonstrating strong understanding of JavaScript logic and DOM manipulation.",
       image: paint,
-      link: "https://snalepa11.github.io/random-password-generator/",
+      link: "https://github.com/jenellecodes/NYPD-Shooting-Incident-Data-Analysis",
       ctaText: "View Live Demo",
     },
     {
@@ -48,7 +48,7 @@ export default function Portfolio() {
       description:
         "A robust back-end e-commerce platform utilizing Object-Relational Mapping (ORM) with Sequelize. Features include product management, category organization, and tag associations. Built with Express.js and MySQL to demonstrate RESTful API design and database relationships.",
       image: paint,
-      link: "https://github.com/snalepa11/ORM-Ecommerce",
+      link: "https://github.com/snalepa11/first-step",
       ctaText: "View Repository",
     },
     {
@@ -59,7 +59,7 @@ export default function Portfolio() {
       description:
         "A dynamic weather application that integrates third-party API data to provide real-time weather information. Features include city search functionality, current conditions display, and multi-day forecasts. Demonstrates API integration and asynchronous JavaScript.",
       image: shells,
-      link: "https://snalepa11.github.io/weather-app/",
+      link: "https://github.com/snalepa11/shopping-behavior-",
       ctaText: "Launch App",
     },
   ];
