@@ -1,6 +1,7 @@
 import "../App.css";
 import { validateEmail } from "../utils/helpers";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [nameErrorMessage, setNameErrorMessage] = useState(false);
@@ -25,25 +26,56 @@ export default function Contact() {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    console.log(name);
-    console.log(message);
-    console.log(email);
+
+    // Validate form
     if (!validateEmail(email) || email === "") {
       setErrorMessage("Please enter a valid email.");
       setNameErrorMessage(true);
+      setTimeout(() => setNameErrorMessage(false), 3000);
+      return;
     } else if (name === "") {
       setErrorMessage("Please fill out the full form.");
       setNameErrorMessage(true);
+      setTimeout(() => setNameErrorMessage(false), 3000);
+      return;
     } else if (message === "") {
       setErrorMessage("Please fill out the full form.");
       setNameErrorMessage(true);
-    } else {
-      setErrorMessage("Success! Your message has been sent.");
-      setNameErrorMessage(true);
+      setTimeout(() => setNameErrorMessage(false), 3000);
+      return;
     }
-    setTimeout(() => {
-      setNameErrorMessage(false);
-    }, 3000);
+
+    // Send email using EmailJS
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+    };
+
+    emailjs
+      .send(
+        "service_p0o6jeb", // Your EmailJS Service ID
+        "template_rbbfbia", // Your EmailJS Template ID
+        templateParams,
+        "zmPnIhutbJYocSKRs" // Your Public Key
+      )
+      .then(
+        () => {
+          setErrorMessage("Success! Your message has been sent.");
+          setNameErrorMessage(true);
+          // Clear form
+          setName("");
+          setEmail("");
+          setMessage("");
+          setTimeout(() => setNameErrorMessage(false), 3000);
+        },
+        (error) => {
+          setErrorMessage("Failed to send message. Please try again.");
+          setNameErrorMessage(true);
+          console.error("EmailJS error:", error);
+          setTimeout(() => setNameErrorMessage(false), 3000);
+        }
+      );
   };
 
   return (
