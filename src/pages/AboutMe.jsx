@@ -8,8 +8,30 @@ import tree from "../assets/abstract.jpeg";
 import redabs3 from "../assets/redabs3.jpg";
 import sunabs from "../assets/sunabs.jpg";
 import "../App.css";
+import { useState, useEffect, useRef } from "react";
 
 export default function AboutMe() {
+  const [visibleBars, setVisibleBars] = useState({});
+  const skillsRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = entry.target.dataset.index;
+            setVisibleBars((prev) => ({ ...prev, [index]: true }));
+          }
+        });
+      },
+      { threshold: 0.5 },
+    );
+
+    const skillItems = skillsRef.current?.querySelectorAll(".skill-item");
+    skillItems?.forEach((item) => observer.observe(item));
+
+    return () => observer.disconnect();
+  }, []);
   const languageArray = [
     { title: "HTML", percentage: "80" },
     { title: "JavaScript", percentage: "80" },
@@ -84,45 +106,41 @@ export default function AboutMe() {
             <div className="bio-content">
               <h3>A Bit About Me</h3>
               <p>
-                Hello and welcome to my webpage! My name is Sarah, and I am a
-                Product Manager with a multidisciplinary background spanning
-                product development, operations, legal administration, and
-                user-centered problem solving. I hold both a Bachelor's and
-                Master's degree in International Relations, where I developed
-                strong research, analytical, and communication skills while
-                studying complex global, social, and economic challenges.
+                Hello and welcome! My name is Sarah, and I'm someone who has
+                always believed that growth comes from embracing new
+                experiences. Throughout my career, I've had the opportunity to
+                work in nonprofit outreach, program coordination, executive
+                administration, legal operations, data analytics, and
+                technology. While my path may not have been traditional, each
+                role has taught me something valuable and helped me build a
+                diverse set of skills.
               </p>
               <br />
               <p>
-                What sets me apart as a product manager is my ability to combine
-                analytical thinking with empathy. Through my experience as an
-                Associate Product Manager and my Data Analytics Fellowship, I've
-                conducted market research, gathered and prioritized
-                requirements, translated business needs into actionable product
-                specifications, and leveraged Python, SQL, and Tableau to turn
-                data into insights that drive decision-making. My background in
-                legal operations and executive support strengthened my ability
-                to manage competing priorities, communicate with stakeholders at
-                every level, and bring structure to complex, fast-moving
-                projects. Whether I'm interviewing users, analyzing product
-                performance, or coordinating cross-functional teams, I enjoy
-                bringing clarity to ambiguity and ensuring every decision is
-                grounded in both data and user needs.
+                One thing that has remained constant throughout my journey is my
+                curiosity. I genuinely enjoy understanding how things work,
+                identifying opportunities for improvement, and finding practical
+                solutions to complex problems. Whether I'm analyzing data with
+                Python, SQL, and Tableau, conducting research, organizing
+                large-scale projects, or collaborating with cross-functional
+                teams, I love bringing structure to ambiguity and helping ideas
+                become reality. My experiences have strengthened my ability to
+                think analytically, communicate effectively, adapt quickly, and
+                build meaningful relationships with people from diverse
+                backgrounds.
               </p>
               <br />
               <p>
-                Beyond my technical and professional experience, I bring a
-                growth mindset that has shaped every stage of my career. I've
-                never been afraid to step into unfamiliar territory, whether
-                that meant transitioning from international relations into
-                technology, building award-winning applications, or continuously
-                expanding my analytical skill set. I believe the best product
-                managers are lifelong learners who ask thoughtful questions,
-                embrace feedback, and remain relentlessly focused on improving
-                the customer experience. I thrive in collaborative environments
-                where curiosity is encouraged, and I'm excited to contribute
-                that mindset to a team building products that make a meaningful
-                impact.
+                Growing up, my father always told me, "When you're young, try
+                everything. Figure out what you like, what you don't like, and
+                don't ever let fear stop you from trying something new." Those
+                words have guided every step of my career. They've encouraged me
+                to step outside my comfort zone, continuously learn new skills,
+                and embrace opportunities that challenge me. Today, I approach
+                every new experience with resilience, curiosity, and the belief
+                that there's always something new to learn. I hope this
+                portfolio gives you a glimpse into that journey, and I
+                appreciate you taking the time to explore my work.
               </p>
             </div>
           </div>
@@ -142,18 +160,23 @@ export default function AboutMe() {
           >
             LANGUAGES & TECHNOLOGIES
           </h2>
-          <div className="skills-grid">
+          <div className="skills-grid" ref={skillsRef}>
             {languageArray.map((language, index) => {
               return (
-                <div key={index} className="skill-item">
+                <div key={index} className="skill-item" data-index={index}>
                   <p>{language.title}</p>
                   <div className="skill-progress-bar">
                     <div
                       className="skill-progress-fill"
-                      style={{ width: `${language.percentage}%` }}
+                      style={{
+                        width: visibleBars[index]
+                          ? `${language.percentage}%`
+                          : "0%",
+                        transition: "width 1s ease-out",
+                      }}
                     >
                       <span className="skill-percentage">
-                        {language.percentage}%
+                        {visibleBars[index] ? `${language.percentage}%` : ""}
                       </span>
                     </div>
                   </div>

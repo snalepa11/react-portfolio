@@ -1,9 +1,9 @@
 import "../App.css";
 import abs3 from "../assets/abs3.jpg";
-import linen from "../assets/linen.jpeg";
-// import tulips from "../assets/tulips.jpeg";
-import paint from "../assets/paint.jpeg";
-import shells from "../assets/stationary.jpeg";
+import breezi from "../assets/Breezi.png";
+import civic from "../assets/civicbridge2gif.gif";
+import redabs3 from "../assets/redabs3.jpg";
+import sunabs from "../assets/sunabs.jpg";
 
 export default function Portfolio() {
   const projects = [
@@ -25,20 +25,9 @@ export default function Portfolio() {
       by: "Sarah Nalepa",
       description:
         "Breezi is a TypeScript-based iOS application that empowers New Yorkers to make informed decisions using real-time weather and air quality data. The app features location-based AQI insights, historical weather comparisons, and an AI-powered chatbot that delivers personalized recommendations for outdoor activities and health-conscious planning.",
-      image: linen,
+      image: breezi,
       link: "https://github.com/snalepa11/Breezi",
       ctaText: "Explore Project",
-    },
-    {
-      title: "GUN\nVIOLENCE\nANALYTICS\nREPORT",
-      client: "The Knowledge House",
-      type: "Data Analysis",
-      by: "Sarah Nalepa",
-      description:
-        "Analyzed historical NYPD shooting incident data using Python to uncover trends in location, demographics, and incident frequency across New York City. Developed interactive visualizations and data-driven insights to identify patterns that can support informed discussions around public safety and resource allocation.",
-      image: paint,
-      link: "https://github.com/jenellecodes/NYPD-Shooting-Incident-Data-Analysis",
-      ctaText: "Explore Analysis",
     },
     {
       title: "CIVIC\nBRIDGE",
@@ -47,9 +36,20 @@ export default function Portfolio() {
       by: "Sarah Nalepa",
       description:
         "This application was designed to help bridge the gap between unbanked individuals and the modern financial system. By leveraging Web3 technology and data-driven insights, it aims to reduce barriers to financial access—particularly for those deterred by traditional banking fees such as overdraft charges and minimum balance requirements—and provide a more inclusive pathway to financial services.",
-      image: paint,
+      image: civic,
       link: "https://github.com/snalepa11/first-step",
       ctaText: "View Repository",
+    },
+    {
+      title: "GUN\nVIOLENCE\nANALYTICS\nREPORT",
+      client: "The Knowledge House",
+      type: "Data Analysis",
+      by: "Sarah Nalepa",
+      description:
+        "Analyzed historical NYPD shooting incident data using Python to uncover trends in location, demographics, and incident frequency across New York City. Developed interactive visualizations and data-driven insights to identify patterns that can support informed discussions around public safety and resource allocation.",
+      image: redabs3,
+      link: "https://github.com/jenellecodes/NYPD-Shooting-Incident-Data-Analysis",
+      ctaText: "Explore Analysis",
     },
     {
       title: "PYTHON\nEDA",
@@ -58,7 +58,7 @@ export default function Portfolio() {
       by: "Sarah Nalepa",
       description:
         "This project explores consumer shopping behavior through data analysis, revealing trends in purchasing habits, demographics, and product preferences. By combining data cleaning, exploratory analysis, and visualization, it demonstrates how businesses can leverage customer data to improve decision-making and enhance the shopping experience.",
-      image: shells,
+      image: sunabs,
       link: "https://github.com/snalepa11/shopping-behavior-",
       ctaText: "Explore Analysis",
     },
