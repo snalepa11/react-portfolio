@@ -31,19 +31,19 @@ export default function Portfolio() {
     },
     {
       title: "GUN\nVIOLENCE\nANALYTICS\nREPORT",
-      client: "Random Password Generator",
-      type: "Frontend Web App",
+      client: "The Knowledge House",
+      type: "Data Analysis",
       by: "Sarah Nalepa",
       description:
         "A secure password generation tool that creates randomized passwords based on user-selected criteria. This analytics-driven application features customizable length and character type options, demonstrating strong understanding of JavaScript logic and DOM manipulation.",
       image: paint,
       link: "https://github.com/jenellecodes/NYPD-Shooting-Incident-Data-Analysis",
-      ctaText: "View Live Demo",
+      ctaText: "Explore Analysis",
     },
     {
       title: "CIVIC\nBRIDGE",
-      client: "ORM E-Commerce",
-      type: "Backend API",
+      client: "MasterCard Hackathon",
+      type: "Web3 iOS Application",
       by: "Sarah Nalepa",
       description:
         "A robust back-end e-commerce platform utilizing Object-Relational Mapping (ORM) with Sequelize. Features include product management, category organization, and tag associations. Built with Express.js and MySQL to demonstrate RESTful API design and database relationships.",
@@ -53,14 +53,14 @@ export default function Portfolio() {
     },
     {
       title: "PYTHON\nEDA",
-      client: "API Weather Application",
-      type: "Frontend Integration",
+      client: "The Knowledge House",
+      type: "Data Analysis",
       by: "Sarah Nalepa",
       description:
         "A dynamic weather application that integrates third-party API data to provide real-time weather information. Features include city search functionality, current conditions display, and multi-day forecasts. Demonstrates API integration and asynchronous JavaScript.",
       image: shells,
       link: "https://github.com/snalepa11/shopping-behavior-",
-      ctaText: "Launch App",
+      ctaText: "Explore Analysis",
     },
   ];
 
